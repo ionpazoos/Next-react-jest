@@ -12,6 +12,7 @@ interface ConvenioFormProps {
     revisado: boolean;
     curricular: boolean;
     reasignacion: boolean;
+    estadoConvenio: string;
   };
 }
 
@@ -58,6 +59,10 @@ const ConvenioForm: React.FC<ConvenioFormProps> = ({ data }) => {
         label="Curso"
         options={["1", "2", "3", "4"]}
         value={data.Curso}
+      />
+      <Field
+        label="Estado Convenio"
+        value={data.estadoConvenio}
       />
     </div>
   );
