@@ -7,7 +7,7 @@ interface ConvenioFormProps {
     tipo: string;
     estadoSincronizacion: string;
     modalidad: string;
-    Añocurso: string;
+    AñoCurso: string;
     Curso: string;
     revisado: boolean;
     curricular: boolean;
@@ -52,9 +52,9 @@ const ConvenioForm: React.FC<ConvenioFormProps> = ({ data }) => {
       <Select
         label="Curso académico"
         options={["22/23", "23/24"]}
-        value={data.Añocurso}
+        value={data.AñoCurso}
       />
-       <Select
+      <Select
         label="Curso"
         options={["1", "2", "3", "4"]}
         value={data.Curso}
