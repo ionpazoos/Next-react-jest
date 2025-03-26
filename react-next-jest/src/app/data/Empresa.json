@@ -1,0 +1,69 @@
+{
+  "empresa": {
+    "nombre": "string",
+    "CIF": "string",
+    "direccion": "string",
+    "localidad": "string",
+    "telefono": "string",
+    "email": "string",
+    "idioma_relacional": [
+      "string"
+    ],
+    "sector": "string",
+    "corporacion_mondragon": "boolean",
+    "numero_trabajadores": "string",
+    "curso_alta": "string",
+    "fecha_primera_visita": "string | null",
+    "estado_revision": "boolean",
+    "tipoPracticas": ["Prácticas",""]
+  },
+  "convenio_marco": [
+    {
+      "data": {
+        "convenio": "string",
+        "idioma": "string",
+        "fecha_firma": "date | null",
+        "firma_empresa": "string | null",
+        "firma_empresagintza": "string | null",
+        "estado_convenio": "string | null",
+        "convenio_activo": "boolean",
+        "estado_documento": "string | null",
+        "version": "string | null"
+      },
+      "aciones": {
+        "botones": "boolean"
+      }
+    }
+  ],
+  "contactos": [
+    {
+      "nombre": "string",
+      "dni": "string | null",
+      "cargo": "string | null",
+      "email": "string | null",
+      "telefono": "string | null",
+      "idioma_relacional": "string | null",
+      "envio_info_comercial": "boolean",
+      "estado": "boolean ? string",
+      "origen": "string | null"
+    }
+  ],
+  "ubicaciones": {
+    "es_filial_espana": "boolean",
+    "es_filial_extranjera": "boolean",
+    "localizacion": "string | null ",
+    "observaciones": "string | null "
+  },
+  "objetivos": [
+    {
+      "objetivo": "string",
+      "respuesta_objetivo": "string",
+      "estado": "string",
+      "observaciones": "string",
+      "llamada": "boolean | null",
+      "email": "boolean | null",
+      "visita": "boolean | null"
+    }
+  ],
+  "Acciones": ["Registrar Llamada","Registrar Email","..."]
+}
